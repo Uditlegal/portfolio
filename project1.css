@@ -1,0 +1,137 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f8f9fa;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Header */
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 20px 0;
+    animation: fadeIn 1s ease-out;
+}
+
+/* Section Styles */
+section {
+    padding: 40px 15px;
+    animation: slideIn 1s ease-out;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #0d1057;
+    margin-bottom: 20px;
+    animation: fadeIn 1.5s ease-out;
+}
+
+p, ul {
+    font-size: 1rem;
+    color: #555;
+}
+
+ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+/* Links */
+a {
+    color: #0d1057;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Card and Media Embeds */
+.video-container {
+    margin: 20px 0;
+}
+
+.instagram-embed {
+    margin: 20px 0;
+}
+
+/* Results Section */
+#results img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+#results img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #0d1057;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+}
+
+footer a {
+    color: #f8f9fa;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    section {
+        padding: 30px 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .video-container iframe {
+        width: 100%;
+        height: auto;
+    }
+
+    .instagram-embed {
+        max-width: 100%;
+    }
+}
